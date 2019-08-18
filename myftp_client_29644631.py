@@ -478,7 +478,7 @@ def main():
         check_cert = Verification(server_RSA_pubkey,clientSignature,serverHash,hashAlg)
 
         if check_cert:
-############## start of secure communication ##############
+########## start of secure communication #########
             print(bcolors.Blue + "Start of secure channel" + bcolors.ENDC)
             message = b"Ready For list of files!"
             request = Encrypt(cipher,message)
